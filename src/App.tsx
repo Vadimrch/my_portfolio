@@ -1,7 +1,9 @@
 import './App.css'
 import {Header} from "./layout/hesder/Header.tsx";
 import {Main} from "./layout/sections/main/Main.tsx";
-// import {Works} from "./layout/sections/works/Works.tsx";
+import {Aboutme} from "./components/box/Aboutme.tsx";
+import {Arrow} from "./components/arrow/Arrow.tsx";
+import {Works} from "./layout/sections/works/Works.tsx";
 
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
         <div className="App">
             <Header/>
             <Main/>
-            {/*<Works/>*/}
+            <Arrow/>
+            <Aboutme/>
+            <Works/>
         </div>
     )
 }

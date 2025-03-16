@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import photo from '../../../assets/images/photo.webp'
+
 // import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 
 export const Main = () => {
@@ -19,7 +20,7 @@ export const Main = () => {
         //
         // </div>
 
-        <Container>
+        <StyledMain>
             <LeftSection>
                 <div style={{ fontSize: '12px', color: '#6c757d' }}>DEVELOPER</div>
                 <Title>Vadim Korolenko</Title>
@@ -29,19 +30,23 @@ export const Main = () => {
                 <Button>Contact Me</Button>
             </LeftSection>
             <RightSection>
-                <Photo src={photo} alt=""/>
+                <Photo src={photo} alt="photo"/>
+
                 {/*<Dimensions>1131 x 399 <ArrowIcon /></Dimensions>*/}
             </RightSection>
-        </Container>
+        </StyledMain>
     );
 };
 
-const Container = styled.div`
+const StyledMain = styled.div`
+  max-width: 1440px;
+    width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-    background-color: bisque;
+  background-color: bisque;
+  border: 2px solid red;
  
 `;
 
@@ -53,6 +58,7 @@ const Photo = styled.img`
     
 `
 const Text = styled.text`
+ width: 520px; /* Ограничиваем ширину блока */
     color: #6c757d;
     font-size: 16px;
     margin-bottom: 20px;
@@ -61,9 +67,10 @@ const Text = styled.text`
 
 
 const LeftSection = styled.div`
-  
-  padding: 20px;
-  width: 50%;
+    margin: 0 0 0 182px;
+    padding: 20px;
+    border: 2px solid red;
+  //width: 50%;
 `;
 
 const RightSection = styled.div`
@@ -71,6 +78,7 @@ const RightSection = styled.div`
   padding: 20px;
   width: 50%;
   text-align: center;
+  border: 2px solid red;
 `;
 
 const Button = styled.button`

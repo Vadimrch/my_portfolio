@@ -8,9 +8,6 @@ export const Header = () => {
         <StyledHeader>
             <Logo/>
             <Menu/>
-
-
-
         </StyledHeader>
     );
 };
@@ -19,6 +16,8 @@ const StyledHeader = styled.header`
     background-color: #ace8d8;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    border: 2px solid red;
 
 
 `
