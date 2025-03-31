@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    border: 2px solid red;
+    border: 1px solid red;
 
 
 `

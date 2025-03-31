@@ -12,11 +12,12 @@ export const Aboutme = () => {
 };
 
 const StyledAboutMe = styled.div`
-    margin: 356px 0 0 182px;
+    width: 100%;
+    //margin: 356px 0 0 182px;
     box-sizing: border-box;
-    border: 2px solid red;
-    background-color: #f1d442;
-    
+    border: 1px solid red;
+    background-color: #e4ddb7;
+
 
 `
 const AboutMeTitle = styled.h2`
@@ -27,7 +28,7 @@ const AboutMeTitle = styled.h2`
 const AboutMeText = styled.p`
     //margin: 356px 0 0 0;
     font-size: 18px;
-    width: 840px; /* Ограничиваем ширину блока */
+    //width: 840px; /* Ограничиваем ширину блока */
     text-align: left; /* Выравниваем текст внутри блока по левому краю */
    
 
