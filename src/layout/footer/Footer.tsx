@@ -37,6 +37,7 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
     background-color: #e8e0ce;
     min-height: 20vh;
+    margin-top: 190px;
 
 `
 const SocialList = styled.ul`

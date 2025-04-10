@@ -11,7 +11,7 @@ export const Contact = () => {
                 <Field placeholder={"Example"}/>
                 <Field placeholder={"Value"}/>
                 <Field placeholder={"Hi, i will ..."} as={"textarea"}/>
-                <Button type={"submit"}>Submit</Button>
+                <ButtonSubmit type={"submit"}>Submit</ButtonSubmit>
 
             </StyledForm>
 
@@ -24,6 +24,7 @@ export const Contact = () => {
 const StyledContacts = styled.section`
     min-height: 50vh;
     background-color: #fffbe1;
+    margin-top: 142px;
 `
 const StyledForm = styled.form`
     max-width: 500px;
@@ -36,5 +37,12 @@ const StyledForm = styled.form`
 const Field = styled.input`
     
 `
-const ButtonSubmit = styled.button
+const ButtonSubmit = styled.button`
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px 20px;
+    width: 532px;
+    height: 48px;
+    
+`
 

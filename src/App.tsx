@@ -1,5 +1,5 @@
 import './App.css'
-import {Header} from "./layout/hesder/Header.tsx";
+import {Header} from "./layout/header/Header.tsx";
 
 import {Aboutme} from "./components/box/Aboutme.tsx";
 import {Arrow} from "./components/arrow/Arrow.tsx";

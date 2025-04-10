@@ -1,10 +1,11 @@
-import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../../../styles/Theme.tsx";
 
 type WorksPropsType = {
     title: string
     textWork: string
     src: string
+
 }
 
 export const Work = (props: WorksPropsType) => {
@@ -12,12 +13,17 @@ export const Work = (props: WorksPropsType) => {
         <StyledWork>
             <Image src={props.src} alt=""/>
             <Title>{props.title}</Title>
-            <TextWork>{props.textWork}</TextWork>
             <Button>Javascript</Button>
             <Button>PostgreSQL</Button>
             <Button>React</Button>
             <Button>redux</Button>
+            <TextWork>{props.textWork}</TextWork>
+
+
         </StyledWork>
+
+
+
     );
 };
 
@@ -28,16 +34,24 @@ const StyledWork = styled.div`
 
 `
 const Image = styled.img`
-width: 100%;
+    width: 100%;
     height: 390px;
     object-fit: cover;
 `
-const Button = styled.button`
-    
-`
+
 const Title = styled.span`
 
 `
 const TextWork = styled.p`
 
+`
+const Button = styled.button`
+    background-color: ${theme.colors.buttonColor}
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+    
 `

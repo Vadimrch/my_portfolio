@@ -11,7 +11,7 @@ type SkillPropsType = {
 export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill>
-            <FlexWrapper direction={"column"} align={"center"}>
+            <FlexWrapper direction={"row"} align={"stretch"}>
                 <Icon iconId={props.iconId} />
                 <SkillTitle>{props.title}</SkillTitle>
             </FlexWrapper>
@@ -27,8 +27,8 @@ const StyledSkill = styled.div`
 `
 const SkillTitle = styled.h3`
     margin: 70px 0 15px;
-   
+
     text-transform: uppercase;
-   
+
 
 `

@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme.tsx";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -26,7 +27,10 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     button {
-        background-color: unset;
+        background-color: ${theme.colors.buttonColor};
+        color: #dbffff;
+        cursor: pointer;
         border: none;
+      
     }
 `
