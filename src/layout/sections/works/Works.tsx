@@ -1,55 +1,81 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
-import {Work} from "./work/Work.tsx";
-import socialImg from './../../../assets/images/image1.png'
 import {Container} from "../../../components/Container.tsx";
+import Image from "./../../../assets/images/image1.png"
+
 
 export const Works = () => {
     return (
         <StyledWorks>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
-                <FlexWrapper justify="space-around" wrap="wrap">
-                    <Work
-                title={"TITLE PROJECT"}
 
-                src={socialImg}
-                textWork={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
-                />
+                    <ul>
+                        <li>
+                            <img src={Image} alt=""/>
+                            <h2>
+                                TITLE PROJECT
+                            </h2>
+                            <span>Javascript</span>
+                            <span>PostgreSQL</span>
+                            <span>React</span>
+                            <span>redux</span>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
 
-                <Work title={"I N S I G H T G R A M"}
-                      src={socialImg}
-                      textWork={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}/>
-                <Work title={"TITLE PROJECT"}
-                      src={socialImg}
-                      textWork={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}/>
+                        </li>
+                        <li>
+                            <img src={Image} alt=""/>
+                            <h2>
+                                I N S I G H T G R A M
+                            </h2>
+                            <span>Javascript</span>
+                            <span>React Native</span>
+                            <span>Redux</span>
 
-                <Work title={"I N S I G H T G R A M"}
-                      src={socialImg}
-                      textWork={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}/>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
 
-            </FlexWrapper>
-            {/*<Image src={image1} alt="image1"/>*/
-            }
-            {/*<TitleProject>TITLE PROJECT</TitleProject>*/
-            }
-            {/*<ButtonProject>JAVASCRIPT</ButtonProject>*/
-            }
-            {/*<ButtonProject>POSTGESQL</ButtonProject>*/
-            }
-            {/*<ButtonProject>REACT</ButtonProject>*/
-            }
-            {/*<ButtonProject>REDUX</ButtonProject>*/
-            }
-            {/*<TextProject>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</TextProject>*/
-            }
+                        </li>
+                        <li>
+                            <img src={Image} alt=""/>
+                            <h2>
+                                TITLE PROJECT
+                            </h2>
+                            <span>Javascript</span>
+                            <span>PostgreSQL</span>
+                            <span>React</span>
+                            <span>redux</span>
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </li>
+                        <li>
+                            <img src={Image} alt=""/>
+                            <h2>
+                                I N S I G H T G R A M
+                            </h2>
+                            <span>Javascript</span>
+                            <span>React Native</span>
+                            <span>Redux</span>
+
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </li>
+                    </ul>
 
 
-        </Container>
-
-</StyledWorks>
-)
-    ;
+            </Container>
+        </StyledWorks>
+    )
+        ;
 };
 
 const StyledWorks = styled.section`
@@ -57,26 +83,43 @@ const StyledWorks = styled.section`
     background-color: darkgrey;
     margin-top: 140px;
     gap: 26px 42px;
+    border-radius: 6px;
 
+    ul {
+display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+    li {
+        
+width: 522px;
+        
+    }
+
+    p {
+        font-size: 16px
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    span {
+        background-color: #5222D0;
+        color: white;
+        font-size: 10px;
+        border-radius: 4px;
+        padding: 8px 16px;
+        width: 105px;
+        height: 30px;
+
+       
+       
+    }
 `
 const SectionTitle = styled.h2`
 
 
 `
-const Button = styled.button`
-    border-radius: 4px;
-    padding: 8px 16px;
-    width: 105px;
-    height: 30px;
 
-`
-const ButtonProject = styled.button`
-    background-color: #6a0dad;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 30px 0 0 0;
-`
 

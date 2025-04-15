@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const SectionTitle = styled.h2`
-    color: red;
-   
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    margin-top: 28px;
 
 `

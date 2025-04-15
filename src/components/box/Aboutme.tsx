@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Container} from "../Container.tsx";
 import {FlexWrapper} from "../FlexWrapper.tsx";
 import line from "./../../assets/images/line.svg"
+import {theme} from "../../styles/Theme.tsx";
 
 export const Aboutme = () => {
     return (
@@ -16,7 +17,6 @@ export const Aboutme = () => {
                         chamber built from sarsen megaliths on its eastern end. Both inhumed and cremated human remains
                         were placed within this chamber during the Neolithic period, representing at least nine or ten
                         individuals.
-                        <img src={line} alt=""/>
                     </AboutMeText>
 
 
@@ -35,6 +35,7 @@ const StyledAboutMe = styled.section`
     border: 1px solid red;
     background-color: #e4ddb7;
     margin-top: 219px;
+    
 
 
 
@@ -51,6 +52,8 @@ const AboutMeText = styled.p`
     font-weight: 400px;
     line-height: 26px;
     letter-spacing: 0.04em;
+    border-left: 5px solid ${theme.colors.buttonColor};
+    padding: 0 17px;
     
     //width: 840px; /* Ограничиваем ширину блока */
     text-align: left; /* Выравниваем текст внутри блока по левому краю */

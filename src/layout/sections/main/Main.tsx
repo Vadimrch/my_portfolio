@@ -56,7 +56,7 @@ const MainText = styled.p`
     width: 520px;
 
 `
-const Name = styled.h2`
+const Name = styled.span`
     font-size: 62px;
     color: ${theme.colors.font};
 `

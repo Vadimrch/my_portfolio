@@ -33,4 +33,8 @@ export const GlobalStyles = createGlobalStyle`
         border: none;
       
     }
+
+    &:focus-visible {
+        outline: 1px solid ;
+    }
 `

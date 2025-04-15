@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from "styled-components";
 
 
@@ -24,16 +23,19 @@ export const Menu = () => {
 const StyledMenu = styled.nav`
 ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    //flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+   
+    
+   
     gap: 30px;
     list-style: none;
     padding: 0;
     
-    .home {
-    margin-right: auto
-    }
+    //.home {
+    //margin-right: auto
+    //}
 }
 `
 const Button = styled.button`
